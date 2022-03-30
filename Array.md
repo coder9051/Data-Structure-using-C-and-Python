@@ -15,7 +15,6 @@ Array may be defined abstractly as finite order set of homogeneous elements. So 
 In computer programming, the most of the cases requires to store the large number of data of similar type. To store such amount of data, we need to define a large number of variables. It would be very difficult to remember names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.
 
 ## How to declare an array??
-In C :
 ```c
 dataType arrayName[arraySize];
 ```
@@ -25,8 +24,6 @@ int a[5];
 ```
 Here, we declared an array, a, of integer type. And its size is 5. Meaning, it can hold 5 integer values.
 
-For Python :
-```python
-a = [1, 2, 3, 4, 5]
-```
-Declaring array in python is simple. Writing elements in square brackets can form an 1 Demensional array.
+It's important to note that the size and type of an array cannot be changed once it is declared.
+
+## How to initialize an array?
