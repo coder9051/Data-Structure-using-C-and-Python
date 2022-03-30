@@ -27,3 +27,31 @@ Here, we declared an array, a, of integer type. And its size is 5. Meaning, it c
 It's important to note that the size and type of an array cannot be changed once it is declared.
 
 ## How to initialize an array?
+It is possible to initialize an array during declaration. For example,
+```c
+int a[5] = { 23, 54, 67, 21, 88};
+```
+
+You can also initialize an array like this.
+
+```c
+int a[] = {12, 54, 67, 23, 32}
+```
+Here, I haven't specified the size. However, the compiler knows its size is 5 as we are initializing it with 5 elements.
+
+## Memory allocation of Array
+All the data elements of an array are stored at contiguous locations in the main memory. The name of the array represents the base address or the address of first element in the main memory. Each element of the array is represented by a proper indexing.
+
+## Properties of array
+* Each element is of same data type and carries a same size i.e. int = 4 bytes.
+* Elements of the array are stored at contiguous memory locations where the first element is stored at the smallest memory location.
+* Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of data element.
+
+## How to access elements of Array
+You can access elements with the help of the index at which you stored them.
+
+Suppose you declared an array a as above. The first element is a[0], the second element is a[1] and so on.
+
+```c
+printf(“%d\n”,a[0]);
+```
