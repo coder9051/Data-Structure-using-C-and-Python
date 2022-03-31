@@ -70,5 +70,14 @@ This operation is to traverse through the elements of an array.
 Following program traverses and prints the elements of an array:
 
 ```c
+#include<stdio.h>
 
+int main()
+{
+    int array[5] = {2, 6, 8, 3, 9};
+    int i = 0;
+    for (i >= 0; i < 5; i++){
+        printf("array[%d] = %d \n", i, array[i]);
+    }
+}
 ```
