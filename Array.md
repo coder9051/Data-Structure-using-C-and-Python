@@ -14,6 +14,11 @@ Array may be defined abstractly as finite order set of homogeneous elements. So 
 ## Why do we need array?
 In computer programming, the most of the cases requires to store the large number of data of similar type. To store such amount of data, we need to define a large number of variables. It would be very difficult to remember names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.
 
+## Advantages of array
+* Array provides the single name for the group of variables of the same type therefore, it is easy to remember the name of all the elements of an array.
+* Traversing an array is a very simple process, we just need to increment the base address of the array in order to visit each element one by one.
+* Any element in the array can be directly accessed by using the index.
+
 ## How to declare an array??
 ```c
 dataType arrayName[arraySize];
@@ -54,4 +59,16 @@ Suppose you declared an array a as above. The first element is a[0], the second 
 
 ```c
 printf(“%d\n”,a[0]);
+```
+
+## Basic operation on array
+Following are the basic operations supported by an array.
+
+### Traversing
+This operation is to traverse through the elements of an array.
+
+Following program traverses and prints the elements of an array:
+
+```c
+
 ```
