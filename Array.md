@@ -81,3 +81,12 @@ int main()
     }
 }
 ```
+### Insertion
+Insert operation is to insert one or more data elements into an array. Based on the requirement, a new element can be added at the beginning, end, or any given index of array.
+
+Here, we see a practical implementation of insertion operation, where we add data at the end of the array −
+
+Example
+
+Following is the implementation of the above algorithm −
+
