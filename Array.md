@@ -84,9 +84,43 @@ int main()
 ### Insertion
 Insert operation is to insert one or more data elements into an array. Based on the requirement, a new element can be added at the beginning, end, or any given index of array.
 
-Here, we see a practical implementation of insertion operation, where we add data at the end of the array −
+Here, we see a practical implementation of insertion operation, where we add data at the given position of the array −
 
 Example
 
 Following is the implementation of the above algorithm −
 
+```c
+#include<stdio.h>
+
+int main()
+
+{
+    int array[5] = { 2, 6, 8, 3, 9};
+
+    // initial size of array
+    int n = 5;
+    int i = 0;
+
+    // element to be inserted
+    int x = 4;
+
+    // position at which the element has to be inserted
+    int pos = 3;
+
+    // increase the size by 1
+    n++;
+
+    // shift elements after the pos forward
+    for (i = n - 1; i >= pos; i--)
+        array[i] = array[i-1];
+
+    // insert x at pos
+    array[pos-1] = x;
+
+    // print new array
+    for (i = 0; i < n; i++)
+        printf("%d ",array[i]);
+
+}
+```
