@@ -124,3 +124,44 @@ int main()
 
 }
 ```
+### Deletion
+Deletion refers to removing an existing element from the array and re-organizing all elements of an array.
+
+Following is the implementation of the above algorithm −
+
+```c
+#include<stdio.h>
+int main()
+
+{
+    int array[5] = { 2, 6, 8, 3, 9};
+
+    // initial size of array
+    int n = 5;
+    int i = 0;
+
+    // element to be deleted
+    int x = 6;
+    int index;
+
+    // iterate the array elements using loop if any element matches the key, store the index
+
+    for (i = 0; i < n-1; i++)
+    {
+        if (array[i] == x)
+        {
+            index = i;
+            break;
+         }
+    }
+
+    //shift all the element from index+1 by one position to the left
+    for (i = index; i < n-1; i++)
+        array[i] = array[i+1];
+
+    // print new array
+    for (i = 0; i < n-1; i++)
+        printf("%d ",array[i]);
+        
+}
+```
