@@ -165,3 +165,12 @@ int main()
         
 }
 ```
+
+### Searching
+You can perform a search for an array element based on its value or its index.
+
+There are two searching techniques linear and binary. For simplicity, I am implementing linear search algorithm to search element in array.
+
+```c
+
+```
