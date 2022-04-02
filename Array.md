@@ -172,5 +172,31 @@ You can perform a search for an array element based on its value or its index.
 There are two searching techniques linear and binary. For simplicity, I am implementing linear search algorithm to search element in array.
 
 ```c
+#include<stdio.h>
+int main()
+{
+    int array[5] = { 2, 6, 8, 3, 9};
 
+    // initial size of array
+    int n = 5;
+    int i = 0;
+
+    // element to be searched
+    int x = 6;
+    int index;
+
+    // iterate the array elements using loop if any element matches the key, store the index
+    for (i = 0; i < n-1; i++)
+    {
+        if (array[i] == x)
+        {
+            index = i;
+            break;
+         }
+    }
+
+    // print the index of element
+    printf("Element %d is found at %d",x,index + 1);
+
+}
 ```
