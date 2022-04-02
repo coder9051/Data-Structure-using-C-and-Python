@@ -186,7 +186,7 @@ int main()
     int index;
 
     // iterate the array elements using loop if any element matches the key, store the index
-    for (i = 0; i < n-1; i++)
+    for (i = 0; i < n; i++)
     {
         if (array[i] == x)
         {
@@ -200,3 +200,44 @@ int main()
 
 }
 ```
+
+### Update
+Update operation refers to updating an existing element from the array at a given index.
+
+```c
+#include<stdio.h>
+int main()
+{
+    int array[5] = { 2, 6, 8, 3, 9};
+    
+    // initial size of array
+    int n = 5;
+    int i = 0;
+    
+    // element to be switched
+    int x = 6;
+    
+    // element with which to be switched
+    int y = 4;
+    int index;
+    
+    // iterate the array elements using loop if any element matches the key, store the index
+    for (i = 0; i < n-1; i++)
+    {
+        if (array[i] == x)
+        {
+            array[i] = y;
+            break;
+         }
+    }
+            
+    // print the index of element
+    for (i = 0; i < n; i++)
+        printf("%d ",array[i]);
+}
+```
+
+## Conclusion
+Arrays store multiple elements of the same type with the same name.You can randomly access elements in the array using an index number.Array memory is predefined, so there is no extra memory loss.Arrays avoid memory overflow.2D arrays can efficiently represent the tabular data
+
+The number of elements in an array should be predefinedAn array is static. It cannot alter its size after declaration.Insertion and deletion operation in an array is quite tricky as the array stores elements in continuous form.Allocating excess memory than required may lead to memory wastage.
