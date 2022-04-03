@@ -9,7 +9,19 @@ Array may be defined abstractly as finite order set of homogeneous elements. So 
 
 ## Content
 * [Why do we need array?](#why-do-we-need-array)
+* [Advantages of array](#advantages-of-array)
 * [How to declare an array?](#how-to-declare-an-array)
+* [How to initialize an array](#how-to-initialize-an-array)
+* [Memory allocation of array](#memory-allocation-of-array)
+* [Properties of array](#properties-of-array)
+* [How to access elements of array](#how-to-access-elements-of-array)
+* [Basic operations on array](#basic-operations-on-array)
+  - [Traversing](#traversing)
+  - [Insertion](#insertion)
+  - [Deletion](#deletion)
+  - [Searching](#searching)
+  - [Update](#update)
+* [Conclusion](#conclusion)
 
 ## Why do we need array?
 In computer programming, the most of the cases requires to store the large number of data of similar type. To store such amount of data, we need to define a large number of variables. It would be very difficult to remember names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.
@@ -52,7 +64,7 @@ All the data elements of an array are stored at contiguous locations in the main
 * Elements of the array are stored at contiguous memory locations where the first element is stored at the smallest memory location.
 * Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of data element.
 
-## How to access elements of Array
+## How to access elements of array
 You can access elements with the help of the index at which you stored them.
 
 Suppose you declared an array a as above. The first element is a[0], the second element is a[1] and so on.
@@ -61,7 +73,7 @@ Suppose you declared an array a as above. The first element is a[0], the second 
 printf(“%d\n”,a[0]);
 ```
 
-## Basic operation on array
+## Basic operations on array
 Following are the basic operations supported by an array.
 
 ### Traversing
