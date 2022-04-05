@@ -21,4 +21,11 @@ And, if you want the plate at the bottom, you must first remove all the plates o
 ## Operations performed on stack
 
 ### Push : Adding an element onto the stack
+In a stack, the operation of inserting an element into the stack is referred to as pushing an element in the stack. The elements are inserted into the stack from the top and hence would compel the elements to shift.
+
+Stack is overflown when we try to insert an element into a completely filled stack therefore, our main function must always avoid stack overflow condition.
+
+```c
+
+```
 
