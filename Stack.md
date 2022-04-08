@@ -119,3 +119,25 @@ void isFull()
     }
 }
 ```
+
+### Display
+Displays all the elements if array starting from the last element added to first.
+
+```c
+void Display()
+{
+    if (Top == -1)
+    {
+        printf("\nStack Underflow");
+    }
+    else
+    {
+        int i;
+        printf("\nElements of array array: ");
+        for(i = Top; i >= 0; --i)
+        {
+            printf("%d ",array[i]);
+        }
+    }
+}
+```
