@@ -54,7 +54,18 @@ Deletion of an element from the top of the stack is called pop operation. The va
 The underflow condition occurs when we try to delete an element from an already empty stack.
 
 ```c
-
+void Pop()
+{
+    if (Top == -1)
+    {
+        printf("\n Stack Underflow!");
+    }
+    else
+    {
+        printf("Element %d is popped", array[Top]);
+        Top = Top -1;
+    }
+}
 ```
 
 ### Peek or Top : Visiting each element of the stack
