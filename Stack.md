@@ -31,7 +31,22 @@ In a stack, the operation of inserting an element into the stack is referred to 
 Stack is overflown when we try to insert an element into a completely filled stack therefore, our main function must always avoid stack overflow condition.
 
 ```c
-
+void Push()
+{
+    int x;
+    if (Top == Size - 1)
+    {
+        printf("\n Stack Overflow!");
+    }
+    else
+    {
+        printf("\nEnter number to be added to array: ");
+        scanf("%d",&x);
+        printf("%d is added to array", x);
+        Top = Top + 1;
+        array[Top] = x;
+    }
+}
 ```
 ### Pop : Deletion of an element from a stack
 Deletion of an element from the top of the stack is called pop operation. The value of the variable top will be incremented by 1 whenever an item is deleted from the stack. The top most element of the stack is stored in an another variable and then the top is decremented by 1. the operation returns the deleted value that was stored in another variable as the result.
