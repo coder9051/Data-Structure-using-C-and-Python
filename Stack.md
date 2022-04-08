@@ -102,3 +102,20 @@ void isEmpty()
     }
 }  
 ```
+
+### isFull
+Returns true if the stack is full, else false.
+
+```c
+void isFull()
+{
+    if (Top == Size -1)
+    {
+        printf("\nArray is Full!");
+    }
+    else
+    {
+        printf("\nArray is not full elements can be added to array.");
+    }
+}
+```
