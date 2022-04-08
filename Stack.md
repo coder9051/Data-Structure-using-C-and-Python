@@ -141,3 +141,27 @@ void Display()
     }
 }
 ```
+
+## Working of Stack
+Initially, we set a pointer Peek/Top to keep the track of the topmost item in the stack.
+
+Initialize the stack to -1. Then, we check whether the stack is empty through the comparison of Peek to -1 i.e. Top == -1
+
+As we add the elements to the stack, the position of the Peek element keeps updating every time.
+
+As soon as we pop or delete an item from the set of inputs, the top-most element gets deleted and thus the value of Peek/Top gets reduced.
+
+## Time Complexity Stack
+As mentioned above, only a single element can be accessed at a time in Stacks.
+
+While performing push() and pop() operations on the stack, it takes O(1) time.
+
+## Application of Stacks
+Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:
+
+* **To reverse a word** - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.
+* **In compilers** - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.
+* **In browsers** - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.
+
+## Conclusion
+I have added .c file of complete implementation of stack.
