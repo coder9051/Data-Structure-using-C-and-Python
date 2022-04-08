@@ -72,12 +72,22 @@ void Pop()
 Peek operation involves returning the element which is present at the top of the stack without deleting it. Underflow condition can occur if we try to return the top element in an already empty stack.
 
 ```c
-
+void Peek()
+{
+    if (Top == -1)
+    {
+        printf("Stack Underflow!");
+    }
+    else
+    {
+        printf("\nLast Element of array is %d", array[Top]);
+    }
+    
+}
 ```
 
 ### IsEmpty
 Returns true if the stack is empty, else false.
 
 ```c
-
 ```
