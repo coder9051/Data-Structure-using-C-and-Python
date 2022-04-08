@@ -90,4 +90,15 @@ void Peek()
 Returns true if the stack is empty, else false.
 
 ```c
+void isEmpty()
+{
+    if (Top == -1)
+    {
+        printf("\nArray is Empty!");
+    }
+    else
+    {
+        printf("\nArray contains element");
+    }
+}  
 ```
