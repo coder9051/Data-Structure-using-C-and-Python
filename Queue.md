@@ -52,6 +52,29 @@ Otherwise, keep increasing the value of front and return the item stored at the 
 Check if the queue is empty or full.
 
 ```c
+void isEmpty()
+{
+    if (Top == -1)
+    {
+        printf("\nArray is Empty!");
+    }
+    else
+    {
+        printf("\nArray contains element");
+    }
+}
+
+void isFull()
+{
+    if (Top == Size -1)
+    {
+        printf("\nArray is Full!");
+    }
+    else
+    {
+        printf("\nArray is not full elements can be added to array.");
+    }
+}
 ```
 
 ## Working of Queue Data Structure
