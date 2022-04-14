@@ -18,13 +18,13 @@ A queue is an object (an abstract data structure - ADT) that allows the followin
 Get the front item from queue.
  
  ```c
- ghjjbffcvgh
+ ghjjbffcvghygdcgh
  ```
 ### Rear: 
 Get the last item from queue.
  
  ```c
- ddvvbbhugg
+ ddvvbbhuggtfdcbhhg
  ```
 ### Enqueue: 
 Add an element to the end of the queue. If the queue is full, then it is said to be an Overflow condition.
@@ -36,7 +36,7 @@ If the item is to be inserted as the first element in the list, in that case set
 Otherwise keep increasing the value of rear and insert each element one by one having rear as the index.
 
 ```c
-fgbhhhvv
+fgbhhhvvggxcc
 ```
 
 ### Dequeue: 
@@ -47,7 +47,7 @@ If, the value of front is -1 or value of front is greater than rear , write an u
 Otherwise, keep increasing the value of front and return the item stored at the front end of the queue at each time.
 
 ```c
-rggcccv
+rggcccvhuvvv
 ```
 
 ### IsEmpty/ IsFull: 
