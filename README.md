@@ -5,6 +5,7 @@ A data structure is a particular way of organizing data in a computer so that it
 * Array
 * Stack
 * Queue
+* Pointer
 
 ## Summary
 
