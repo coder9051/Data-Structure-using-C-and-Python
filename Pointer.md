@@ -28,3 +28,18 @@ Pointers (pointer variables) are special variables that are used to store addres
 This variable can be of type int, char, array, function, or any other pointer. The size of the pointer depends on the architecture. However, in 32-bit architecture the size of a pointer is 2 byte.
 
 ## Pointer Syntax
+Here is how we can declare pointers.
+```c
+int* p;
+```
+Here, we have declared a pointer p of int type.
+
+You can also declare pointers in these ways.
+```c
+int *p1; int * p2; 
+```
+Let's take another example of declaring pointers.
+```c
+int* p1, p2;
+```
+Here, we have declared a pointer p1 and a normal variable p2.
