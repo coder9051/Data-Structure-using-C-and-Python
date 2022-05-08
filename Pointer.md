@@ -7,6 +7,10 @@ C pointers are simple and enjoyable to learn.Some C programming tasks are easier
 * [Pointer Syntax](#pointer-syntax)
 * [Get value of things Pointed by Pointers](#get-value-of-things-pointed-by-pointers)
 * [Changing value Pointed by Pointers](#changing-value-pointed-by-pointers)
+* [Some special Pounters](#some-special-pointers)
+   - [Wild Pointer](#wild-pointer)
+   - [Null Pointer](#null-pointer)
+   - [Void Pointer](#void-pointer)
 
 ## Addresses in C
 Before we get to the definition of pointers, let us understand what happens when we write the following code:
@@ -87,3 +91,31 @@ We have assigned the address of c to the pc pointer.
 
 Then, we changed *pc to 1 using *pc = 1;. Since pc and the address of c is the same, c will be equal to 1.
 
+## Some special Pointers
+### Wild Pointer
+```c
+char *alphabetAddress; /* uninitialised or wild pointer */ 
+char alphabet = "a"; 
+alphabetAddress = &alphabet; /* now, not a wild pointer */
+```
+When we defined our character pointer alphabetAddress, we did not initialize it.
+
+Such pointers are known as wild pointers. They store a garbage value (that is, memory address) of a byte that we don't know is reserved or not (remember int digit = 42;, we reserved a memory address when we declared it).
+
+Suppose we dereference a wild pointer and assign a value to the memory address it is pointing at. This will lead to unexpected behaviour since we will write data at a  memory block that may be free or reserved
+
+### NULL Pointer
+To make sure that we do not have a wild pointer, we can initialize a pointer with a NULL value, making it a null pointer.
+```c
+char *alphabetAddress = NULL /* Null pointer */ 
+```
+A null pointer points at nothing, or at a memory address that users can not access.
+
+### Void Pointer
+A void pointer can be used to point at a variable of any data type. It can be reused to point at any data type we want to. It is declared like this:
+```c
+void *pointerVariableName = NULL; 
+```
+Since they are very general in nature, they are also known as generic pointers.
+
+With their flexibility, void pointers also bring some constraints. Void pointers cannot be dereferenced as any other pointer. Appropriate typecasting is necessary.
