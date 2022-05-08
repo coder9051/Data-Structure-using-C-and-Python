@@ -5,7 +5,8 @@ C pointers are simple and enjoyable to learn.Some C programming tasks are easier
 * [Addresses in C](#addresses-in-c)
 * [What is Pointer?](#what-is-pointer)
 * [Pointer Syntax](#pointer-syntax)
-* [Get value of things Pointed by Pointer](#get-value-of-things-pointed-by-pointer)
+* [Get value of things Pointed by Pointers](#get-value-of-things-pointed-by-pointers)
+* [Changing value Pointed by Pointers](#changing-value-pointed-by-pointers)
 
 ## Addresses in C
 Before we get to the definition of pointers, let us understand what happens when we write the following code:
@@ -58,3 +59,31 @@ Here, the address of c is assigned to the pc pointer. To get the value stored in
 *Note: In the above example, pc is a pointer, not * pc. You cannot and should not do something like * pc = &c;*
 
 *By the way, * is called the dereference operator (when working with pointers). It operates on a pointer and gives the value stored in that pointer.*
+
+# Changing Value Pointed by Pointers
+Let's take an example.
+```c
+int* pc, c; 
+c = 5; 
+pc = &c; 
+c = 1; 
+printf("%d", c); // Output: 1 
+printf("%d", *pc); // Ouptut: 1
+```
+We have assigned the address of c to the pc pointer.
+
+Then, we changed the value of c to 1. Since pc and the address of c is the same, *pc gives us 1.
+
+Let's take another example.
+```c
+int* pc, c; 
+c = 5; 
+pc = &c; 
+*pc = 1; 
+printf("%d", *pc); // Ouptut: 1
+printf("%d", c); // Output: 1 
+```
+We have assigned the address of c to the pc pointer.
+
+Then, we changed *pc to 1 using *pc = 1;. Since pc and the address of c is the same, c will be equal to 1.
+
