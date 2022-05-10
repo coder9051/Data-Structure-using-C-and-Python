@@ -11,6 +11,7 @@ C pointers are simple and enjoyable to learn.Some C programming tasks are easier
    - [Wild Pointer](#wild-pointer)
    - [Null Pointer](#null-pointer)
    - [Void Pointer](#void-pointer)
+   - [Dangling Pointer](#dangling-pointer)
 
 ## Addresses in C
 Before we get to the definition of pointers, let us understand what happens when we write the following code:
@@ -119,3 +120,19 @@ void *pointerVariableName = NULL;
 Since they are very general in nature, they are also known as generic pointers.
 
 With their flexibility, void pointers also bring some constraints. Void pointers cannot be dereferenced as any other pointer. Appropriate typecasting is necessary.
+
+### Dangling Pointer
+A dangling pointer points to a memory address which used to hold a variable. Since the address it points at is no longer reserved, using it will lead to unexpected results.
+```c
+main()
+{ 
+    int *ptr; 
+    ptr = (int *)malloc(sizeof(int)); 
+    *ptr = 1; 
+    printf("%d",*ptr); /* prints 1 */
+    free(ptr); /* deallocation */ 
+    *ptr = 5; 
+    printf("%d",*ptr); /* may or may not print 5 */ 
+} 
+```
+Though the memory has been deallocated by free(ptr), the pointer to integer ptr still points to that unreserved memory address
