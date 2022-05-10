@@ -136,3 +136,19 @@ main()
 } 
 ```
 Though the memory has been deallocated by free(ptr), the pointer to integer ptr still points to that unreserved memory address
+
+## Pointer Arithmetic
+We know by now that pointers are not like any other variable. They do not store any value but the address of memory blocks.
+
+So it should be quite clear that not all arithmetic operations would be valid with them.
+
+**Pointers have few but immensely useful valid operations:**
+
+1. You can assign the value of one pointer to another only if they are of the same type (unless they're typecasted or one of them is void *).
+```c
+int ManU = 1; 
+int *addressOfManU = &ManU; 
+int *anotherAddressOfManU = NULL; 
+anotherAddressOfManU = addressOfManU; /* Valid */ 
+double *wrongAddressOfManU = addressOfManU; /* Invalid */
+```
