@@ -12,6 +12,7 @@ C pointers are simple and enjoyable to learn.Some C programming tasks are easier
    - [Null Pointer](#null-pointer)
    - [Void Pointer](#void-pointer)
    - [Dangling Pointer](#dangling-pointer)
+* [Pointer Arithmetic](#pointer-arithmetic)
 
 ## Addresses in C
 Before we get to the definition of pointers, let us understand what happens when we write the following code:
@@ -152,3 +153,21 @@ int *anotherAddressOfManU = NULL;
 anotherAddressOfManU = addressOfManU; /* Valid */ 
 double *wrongAddressOfManU = addressOfManU; /* Invalid */
 ```
+2. You can only add or subtract integers to pointers.
+```c
+int myArray = {3,6,9,12,15}; 
+int *pointerToMyArray = &myArray[0]; 
+pointerToMyArray += 3; /* Valid */ 
+pointerToMyArray *= 3; /* Invalid */ 
+```
+
+When you add (or subtract) an integer (say n) to a pointer, you are not actually adding (or subtracting) n bytes to the pointer value. You are actually adding (or subtracting) n-times the size of the data type of the variable being pointed bytes.
+
+```c
+int number = 5; /* Suppose the address of number is 100 */ 
+int *ptr = &number; 
+int newAddress = ptr + 3; /* Same as ptr + 3 * sizeof(int) */ 
+```
+The value stored in newAddress will not be 103, rather 112.
+
+3. 
